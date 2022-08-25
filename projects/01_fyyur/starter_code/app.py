@@ -26,7 +26,7 @@ db = SQLAlchemy(app)
 
 migrate = Migrate(app, db)
 
-
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:hugo@localhost:5432/fyyurproject'
 # ----------------------------------------------------------------------------#
 # Models.
 # ----------------------------------------------------------------------------#
